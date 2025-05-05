@@ -1,6 +1,6 @@
 package homework;
 
-public class Animal {
+public class AnimalTest {
     public static void main(String[] args) {
         Cat bosimao = new Cat("花色", "波斯猫");
         Dog zangao = new Dog();
