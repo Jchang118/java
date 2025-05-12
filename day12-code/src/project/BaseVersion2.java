@@ -21,6 +21,7 @@ public class BaseVersion2 {
                     System.out.println("感谢您的使用,再见");
                     return;
                 }
+                default -> System.out.println("输入错误,请重新输入");
             }
         }
     }
@@ -118,7 +119,7 @@ public class BaseVersion2 {
         idCardNumberEntered = sc.next();
         System.out.println("请输入手机号:");
         mobileNumberEntered = sc.next();
-        boolean match = idCardNumber.equals(idCardNumberEntered) && mobileNumber.equals(mobileNumberEntered);
+        boolean match = idCardNumber.equalsIgnoreCase(idCardNumberEntered) && mobileNumber.equals(mobileNumberEntered);
         if (!match) {
             System.out.println("账号信息不匹配,修改失败");
             return;
